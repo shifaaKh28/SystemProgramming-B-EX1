@@ -1,6 +1,5 @@
-# shifaaKhatib28@gmail.com
-# 324095702
-
+//email: shifaaKhatib28@gmail.com
+//id: 324095702
 #include "Graph.hpp"
 namespace ariel
 {

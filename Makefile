@@ -1,5 +1,5 @@
-# shifaaKhatib28@gmail.com
-# 324095702
+//email: shifaaKhatib28@gmail.com
+//id: 324095702
 
 CXX=clang++
 CXXFLAGS=-std=c++11 -Werror -g -Wsign-conversion
@@ -19,6 +19,9 @@ test: TestCounter.o Test.o $(OBJECTS)
 
 tidy:
 	clang-tidy $(SOURCES) -checks=bugprone-*,clang-analyzer-*,cppcoreguidelines-*,performance-*,portability-*,readability-*,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-cppcoreguidelines-owning-memory --warnings-as-errors=-* --
+
+#tidy:
+#	clang-tidy $(SOURCES) -checks=bugprone-*,clang-analyzer-*,cppcoreguidelines-*,performance-*,portability-*,readability-*,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-cppcoreguidelines-owning-memory --header-filter=.* --system-headers --warnings-as-errors=-* --
 
 valgrind: demo test
 	valgrind --tool=memcheck $(VALGRIND_FLAGS) ./demo 2>&1 | { egrep "lost| at " || true; }

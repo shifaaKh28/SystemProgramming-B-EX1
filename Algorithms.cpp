@@ -1,5 +1,5 @@
-# shifaaKhatib28@gmail.com
-# 324095702
+//email: shifaaKhatib28@gmail.com
+//id: 324095702
 
 #include "Graph.hpp"
 #include <vector>
@@ -215,17 +215,18 @@ namespace ariel
 
         string negativeCycle(Graph g)
         {
+            // Check if the graph has no edges
+            if (g.getNumberOfEdges() == 0)
+            {
+                return "there are no edges in the graph.";
+            }
+            
             // Check if the graph is empty
             if (g.getNumberOfVertices() == 0)
             {
                 return "empty graph!";
             }
 
-            // Check if the graph has no edges
-            if (g.getNumberOfEdges() == 0)
-            {
-                return "there are no edges in the graph.";
-            }
 
             // Check if there are no negative edges in the graph
             if (!g.isNegativeEdge())

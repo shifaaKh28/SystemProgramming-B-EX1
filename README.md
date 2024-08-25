@@ -11,7 +11,7 @@ This project implements various graph algorithms, including algorithms for deter
 
 ## Dependencies
 - C++ compiler
-- doctest (testing framework)
+- doctest (testing framework).
 
 ## Graph Class Methods
 - **isDirectedGraph()**: Returns true if the graph is directed, false otherwise.
